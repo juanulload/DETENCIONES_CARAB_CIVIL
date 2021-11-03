@@ -26,9 +26,9 @@ def cleaner(data_frame):
     keys_receptacion = {keys:"RECEPTACION" for keys in keys_receptacion}
     keys_robo_intimidacion = {keys:"ROBO CON INTIMIDACION" for keys in keys_robo_intimidacion}
     keys_robo_lugar_no_habit = {keys:"ROBO EN LUGAR NO HABITADO" for keys in keys_robo_lugar_no_habit}
-    keys_robo_violencia = keys = {keys:"ROBO CON VIOLENCIA" for keys in keys_robo_violencia}
+    keys_robo_violencia = {keys:"ROBO CON VIOLENCIA" for keys in keys_robo_violencia}
     keys_contra_propiedad = {keys:"CONTRA LA PROPIEDAD (OTROS)" for keys in keys_contra_propiedad}
-    keys_danos_propiedad = keys = {keys:"DANOS A LA PROPIEDAD" for keys in keys_danos_propiedad}
+    keys_danos_propiedad = {keys:"DANOS A LA PROPIEDAD" for keys in keys_danos_propiedad}
 
     data_frame["MOTIVO"] = data_frame["MOTIVO"].fillna('NO INFORMADO')
 
